@@ -1,0 +1,227 @@
+/* Exemplo básico de CSS */
+
+body {
+
+    font-family: Arial, sans-serif;
+  
+    margin: 0;
+  
+    padding: 0;
+
+    padding-bottom: 80px;
+
+    background-color: rgba(128, 128, 128, 0.253);
+
+    text-align: center;
+  
+  }
+  
+   
+  
+  header {
+  
+    display: flex;
+  
+    justify-content: space-between;
+  
+    align-items: center;
+  
+    padding: 20px;
+  
+    background-color: #333;
+  
+    color: #fff;
+
+    text-decoration: none;
+  
+  }
+  
+   
+  
+  header .logo {
+  
+    font-size: 24px;
+  
+  }
+  
+   
+  
+  header nav ul {
+  
+    list-style: none;
+  
+    display: flex;
+  
+    gap: 20px;
+  
+  }
+  
+   
+  
+  header nav ul li a {
+  
+    color: #fff;
+  
+    text-decoration: none;
+  
+  }
+  
+   
+  
+  header .cta {
+  
+    background-color: #ff6347;
+  
+    padding: 10px 20px;
+  
+    color: #fff;
+  
+    text-decoration: none;
+  
+    border-radius: 5px;
+  
+  }
+  
+  
+  section {
+  
+    padding: 40px 20px;
+  
+  }
+  
+   
+  
+  footer {
+  
+    background-color: #333;
+  
+    color: #fff;
+  
+    padding: 20px;
+  
+    text-align: center;
+  
+  }
+  
+   
+  
+  footer .social-links a,
+  
+  footer .legal-links a {
+  
+    color: #fff;
+  
+    text-decoration: none;
+  
+    margin: 0 10px;
+  
+  }
+  
+  .container-card {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.card {
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(#333, #333);
+    transition: all .5s;
+}
+
+.card:hover {
+    background-image: linear-gradient(#672abf, #380e74);
+}
+
+.card .img {
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-image: url('./assets/Evelynn.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
+}
+
+.card .img span {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 100;
+    font-style: italic;
+    transition: all .5s;
+}
+
+.card:hover .img {
+    width: 430px;
+    opacity: 1;
+}
+
+.card:hover .img span {
+    font-size: 28px;
+}
+
+.card .content {
+    padding: 0px 20px;
+    height: 0;
+    opacity: 0;
+    transition: all .5s;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translateY(30px);
+}
+
+.card:hover .content {
+    height: 260px;
+    padding: 20px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card .content p {
+    margin: 0;
+}
+
+.card .content .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card .content .desc {
+    font-size: 14px;
+    font-weight: 100;
+    opacity: .8;
+    margin-top: 8px;
+}
+
+.card .arrow {
+    padding: 15px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+
+.card:hover .arrow {
+    transform: rotate(0);
+}
+
+.card .arrow span {
+    font-size: 24px;
+}
+

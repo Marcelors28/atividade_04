@@ -1,206 +1,302 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="script.js">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  
-  <title>Landing page</title>
-  <div class="logo">Logo da Empresa</div>
+  <meta charset="UTF-8" />
 
-  <nav>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <ul>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
 
-      <li><a href="#sobre">Sobre</a></li>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
 
-      <li><a href="servicos.html">Serviços</a></li>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-      <li><a href="#testemunhos">Testemunhos</a></li>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser/dist/emailjs.min.js"></script>
 
-      <li><a href="#contato">Contato</a></li>
-
-    </ul>
-
-  </nav>
-
-  <a href="#contato" class="cta">Entre em Contato</a>
-
+  <title>Academia GYM</title>
+  <link rel="icon" href="../atividade04/images/logo.avif">
 </head>
+
 <body>
 
-  <div class="container"><!--Container -->
-    <div class="row"><!--Row -->
-      <div class="col-sm-8 m-auto"><!--col-sm8 -->
-          
-        <div id="carousel-indicadores" class="carousel slide" data-ride="carousel"><!--Carousel-->
+  <!-- inicio Cabecalho -->
 
-   <!--Indicadores-->
+  <header>
+
+    <div class="logo-container">
+      <img src="images/logo.avif" alt="Logo da Academia" class="logo">
+      <h2>Academia GYM</h2>
+    </div>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#beneficios">Benefícios</a></li>
+        <li><a href="#testemunhos">Depoimentos</a></li>
+      </ul>
+    </nav>
+    <a href="#contato" class="cta-button">Entre em contato</a>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </header>
+
+  <!-- Fim do Cabecalho -->
+
+  <section id="estrutura">
+    <h2>Conheça nossa estrutura</h2>
+    <p>
+      A estrutura de aparelhos de uma academia de alta qualidade inclui uma variedade de equipamentos para atender a
+      diferentes necessidades de treino. Você encontrará:
+      <li>Equipamentos Cardiovasculares: Esteiras, bicicletas ergométricas, elípticos e remo, essenciais para melhorar a
+        resistência cardiovascular.</li>
+
+      <li>Pesos Livres: Halteres, kettlebells e barras olímpicas, proporcionando flexibilidade nos exercícios de força e
+        hipertrofia.</li>
+
+      <li>Máquinas de Musculação: Equipamentos guiados, como leg press, peck deck e pull-down, que ajudam a executar os
+        movimentos com segurança.</li>
+
+      <li>Área de Treinamento Funcional: Espaço dedicado com cordas, bolas medicinais e plataformas de salto para
+        exercícios dinâmicos.</li>
+
+      <li>Estação de Musculação Multifuncional: Combina diversos exercícios em um único equipamento, ideal para treinos
+        completos.</li>
+
+      Esses aparelhos garantem um treino eficiente e seguro, ajudando a alcançar melhores resultados.
+    </p>
+  </section>
+
+  <div class="container">
+    <!--Container -->
+
+    <div class="row">
+      <!--Row -->
+
+      <div class="col-sm-8 m-auto">
+        <!--col-sm8 -->
+
+        <div id="carousel-indicadores" class="carousel slide" data-ride="carousel">
+
+          <!--Carousel-->
+
+          <!--Indicadores-->
+
           <ol class="carousel-indicators">
-
             <li class="active" data-target="#carousel-indicadores" data-slide-to="0"></li>
 
             <li data-target="#carousel-indicadores" data-slide-to="1"></li>
 
             <li data-target="#carousel-indicadores" data-slide-to="2"></li>
+          </ol>
 
-     
-           </ol>
+          <div class="carousel-inner">
+            <!--Inner-->
 
-            <div class="carousel-inner"><!--Inner-->
-
-              <div class="carousel-item active">
-              <img src="images/imagem1.jpeg" class="img-fluid">
-
-            </div> 
+            <div class="carousel-item active">
+              <img src="images/imagem1.jpeg" class="img-fluid" />
+            </div>
 
             <div class="carousel-item">
-              <img src="images/imagem2.jpeg" class="img-fluid">
+              <img src="images/imagem2.jpeg" class="img-fluid" />
             </div>
 
-             <div class="carousel-item">
-              <img src="images/imagem3.jpeg" class="img-fluid">
-            </div>              
-            </div><!--/Inner -->
+            <div class="carousel-item">
+              <img src="images/imagem3.jpeg" class="img-fluid" />
+            </div>
+          </div>
+          <!--/Inner -->
 
-   <!--Controles -->
-        <a href="#carousel-indicadores" class="carousel-control-prev" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </a>
+          <!--Controles -->
 
-        <a href="#carousel-indicadores" class="carousel-control-next" data-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </a>
+          <a href="#carousel-indicadores" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
 
-      </div><!--/Carousel -->
-    </div><!--/col-sm8 -->
-  </div><!--/Row -->
-</div><!--/Container -->
+          <a href="#carousel-indicadores" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+        <!--/Carousel -->
+      </div>
+      <!--/col-sm8 -->
+    </div>
+    <!--/Row -->
+  </div>
+  <!--/Container -->
 
   <section id="sobre">
-
     <h2>Sobre Nós</h2>
-  
-    <p>Descrição breve sobre a empresa ou produto.</p>
-  
+
+    <p>
+      Bem-vindo à Academia GYM, o lugar onde sua jornada de força e bem-estar começa.
+      Desde 2015, nossa missão é fornecer um ambiente acolhedor e motivador para todos os nossos membros,
+      sejam eles iniciantes ou atletas experientes.
+      Na Academia GYM, acreditamos que a musculação é mais do que apenas levantar pesos – é sobre transformar vidas.
+      Nossa missão é capacitar nossos membros a alcançarem seus objetivos de fitness e a levarem uma vida mais saudável
+      e feliz.
+    </p>
   </section>
-  
+
   <section id="servicos">
-
     <h2>Nossos Serviços</h2>
-    
-                   <!-- inicio dos cards -->
-      <div class="container-card">
-        <div class="card">
-            <div class="img">
-                <span>card 1 </span>
-            </div>
 
-            <div class="content">
-                <span class="title">Serviço 1</span>
-                <p class="desc">Nas ruelas sombrias de Runeterra, a criatura demoníaca Evelynn busca sua próxima vítima. Ela atrai presas com sua voluptuosa aparência de fêmea humana, mas assim que a vítima sucumbe ao seu charme, a verdadeira forma de Evelynn é revelada. A criatura então sujeita suas vítimas a um tormento inenarrável, gratificando-se com a dor alheia. Para ela, esses contatos são casinhos inocentes; Para o resto de Runeterra, são histórias macabras de encontros lascivos que deram errado e lembretes terríveis sobre o custo do desejo desenfreado.</p>
-            </div>
+    <!-- inicio dos cards -->
 
-            <div class="arrow">
-                <span>&#8673;</span>
-            </div>
+    <div class="container-card">
+      <!-- card 1 -->
+      <div class="card">
+        <div class="img">
+          <span>Musculação </span>
         </div>
 
-        <div class="card">
-            <div class="img">
-                <span>card 1 </span>
-            </div>
-
-            <div class="content">
-                <span class="title">Serviço 1</span>
-                <p class="desc">Nas ruelas sombrias de Runeterra, a criatura demoníaca Evelynn busca sua próxima vítima. Ela atrai presas com sua voluptuosa aparência de fêmea humana, mas assim que a vítima sucumbe ao seu charme, a verdadeira forma de Evelynn é revelada. A criatura então sujeita suas vítimas a um tormento inenarrável, gratificando-se com a dor alheia. Para ela, esses contatos são casinhos inocentes; Para o resto de Runeterra, são histórias macabras de encontros lascivos que deram errado e lembretes terríveis sobre o custo do desejo desenfreado.</p>
-            </div>
-
-            <div class="arrow">
-                <span>&#8673;</span>
-            </div>
+        <div class="content">
+          <p class="desc">
+            Na Academia GYM, oferecemos serviços de musculação de alta qualidade para ajudar você a alcançar seus
+            objetivos de força e condicionamento físico. Nossas instalações modernas estão equipadas com uma ampla
+            variedade de pesos livres,
+            máquinas de resistência e áreas dedicadas ao treinamento funcional.
+            Contamos com treinadores experientes e certificados que oferecem orientação personalizada e planos de treino
+            individualizados.
+          </p>
         </div>
-        <div class="card">
-            <div class="img">
-                <span>card 1 </span>
-            </div>
 
-            <div class="content">
-                <span class="title">Serviço 1</span>
-                <p class="desc">Nas ruelas sombrias de Runeterra, a criatura demoníaca Evelynn busca sua próxima vítima. Ela atrai presas com sua voluptuosa aparência de fêmea humana, mas assim que a vítima sucumbe ao seu charme, a verdadeira forma de Evelynn é revelada. A criatura então sujeita suas vítimas a um tormento inenarrável, gratificando-se com a dor alheia. Para ela, esses contatos são casinhos inocentes; Para o resto de Runeterra, são histórias macabras de encontros lascivos que deram errado e lembretes terríveis sobre o custo do desejo desenfreado.</p>
-            </div>
-
-            <div class="arrow">
-                <span>&#8673;</span>
-            </div>
+        <div class="arrow">
+          <span>&#8673;</span>
         </div>
-    </div> 
-    <!-- fim dos cards -->
-  
+      </div>
+      <!-- card 2 -->
+      <div class="card">
+        <div class="img">
+          <span>Crossfit </span>
+        </div>
+
+        <div class="content">
+
+          <p class="desc">
+            Na Academia GYM, nosso programa de CrossFit é projetado para desafiar e transformar atletas de todos os
+            níveis.
+            Com treinamentos variados e de alta intensidade, combinamos movimentos funcionais que englobam levantamento
+            de peso,
+            cardio e ginástica. Nossos instrutores certificados criam treinos diários (WODs) que são adaptáveis para
+            iniciantes e veteranos, garantindo segurança e eficácia.
+          </p>
+        </div>
+
+        <div class="arrow">
+          <span>&#8673;</span>
+        </div>
+      </div>
+      <!-- card 3 -->
+      <div class="card">
+        <div class="img">
+          <span>Funcional </span>
+        </div>
+
+        <div class="content">
+
+          <p class="desc">
+            Na Academia GYM, nossos serviços de treino funcional são projetados para melhorar a força, flexibilidade, e
+            resistência dos nossos membros.
+            Utilizamos uma combinação de exercícios que mimetizam movimentos do dia a dia, para aumentar o desempenho
+            físico e prevenir lesões. Com o apoio de treinadores especializados, oferecemos sessões dinâmicas e
+            motivadoras que se adaptam a todos os níveis de condicionamento físico.
+          </p>
+        </div>
+
+        <div class="arrow">
+          <span>&#8673;</span>
+        </div>
+      </div>
+    </div>
   </section>
+  <!-- fim dos cards -->
+
 
   <section id="testemunhos">
-
     <h2>O que nossos clientes dizem</h2>
-  
-    <div class="testemunhos-container">
-  
-      <!-- Os testemunhos serão carregados dinamicamente via API -->
-  
-    </div>
-  
+    <main class="content-container">
+      <div class="testimonial-container">
+        <h1 style="color: black "> Depoimentos</h1>
+        <p class="testimonial">
+          "Está academia realmente se importa com o resultado das pessoas, recomendo a todos !!"
+        </p>
+        <div class="user"><img src="https://randomuser.me/api/portraits/men/38.jpg" alt="user" class="user-image" />
+          <div class="user-details">
+            <h4 class="username">Julio Pontes</h4>
+          </div>
+        </div>
+      </div>
+    </main>
+  </section>
+
+  <section id="beneficios">
+    <h2>Benefícios</h2>
+    <p>
+      Atividades físicas são fundamentais para a saúde e bem-estar. Elas melhoram a saúde cardiovascular, fortalecem
+      músculos e ossos, e ajudam na manutenção de um peso saudável.
+      Além dos benefícios físicos,
+      exercitar-se regularmente também reduz o estresse, melhora o humor e aumenta a energia diária. Incorporar
+      atividades físicas na rotina diária promove uma vida mais longa e saudável, proporcionando bem-estar integral.
+    </p>
   </section>
 
   <section id="contato">
-
     <h2>Contato</h2>
-  
     <form id="contact-form">
-  
-      <input type="text" name="nome" placeholder="Nome" required>
-  
-      <input type="email" name="email" placeholder="Email" required>
-  
-      <input type="tel" name="telefone" placeholder="Telefone">
-  
-      <textarea name="mensagem" placeholder="Mensagem" required></textarea>
-  
-      <button type="submit">Enviar</button>
-  
-    </form>
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required>
 
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Telefone:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="message">Mensagem:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
   </section>
 
   <footer>
-
     <div class="social-links">
-  
       <a href="#">Facebook</a>
-  
-      <a href="#">Twitter</a>
-  
-      <a href="#">Instagram</a>
-  
+      <a href=""><img src="../atividade04/images/facebook.png">
+        <a href="#">Twitter</a>
+        <a href=""><img src="../atividade04/images/twitter.png">
+          <a href="#">Instagram</a>
+          <a href=""><img src="../atividade04/images/instagram.png">
     </div>
-  
+
     <div class="legal-links">
-  
       <a href="#">Termos de Uso</a>
-  
       <a href="#">Política de Privacidade</a>
-  
     </div>
-  
   </footer>
-  <link rel="stylesheet" href="script.js">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser/dist/emailjs.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
